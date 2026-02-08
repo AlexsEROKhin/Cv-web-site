@@ -40,3 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => setLang(btn.dataset.lang));
   });
 });
+// ================= THEME TOGGLE =================
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+  document.body.classList.add("light");
+  if (themeToggle) themeToggle.textContent = "☀️";
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+
+    const isLight = document.body.classList.contains("light");
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+
+    themeToggle.textContent = isLight ? "☀️" : "🌙";
+  });
+}
+
