@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OLEKSII YEROKHIN — Junior Full-Stack Developer</title>
+  <meta name="description" content="Junior Full-Stack Developer (FastAPI). Projects, skills, and contact." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">OY</a>
+
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="skills.html" data-i18n="nav.skills">Skills</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="education.html" data-i18n="nav.education">Education</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-lang="no">NO</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+  <section class="hero">
+    <h1 data-i18n="projects.title">Projects</h1>
+    <p class="summary" data-i18n="projects.intro">
+      Selected projects that demonstrate my full-stack skills. Each project includes a clear setup guide and source code.
+    </p>
+  </section>
+
+  <section class="block">
+    <div class="project-grid">
+
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <div class="project-head">
+          <h2 class="project-title">Task Manager</h2>
+          <span class="badge" data-i18n="projects.badge.fullstack">Full-Stack</span>
+        </div>
+
+        <p class="project-text" data-i18n="projects.p1.problem">
+          A simple app to create and manage tasks.
+        </p>
+        <p class="project-text" data-i18n="projects.p1.solution">
+          Built a FastAPI REST API and connected it to an SQLite database, with a basic frontend using fetch.
+        </p>
+
+        <h3 class="project-subtitle" data-i18n="projects.whatBuilt">What I built</h3>
+        <ul class="list">
+          <li data-i18n="projects.p1.b1">CRUD endpoints with validation</li>
+          <li data-i18n="projects.p1.b2">SQLite schema for tasks</li>
+          <li data-i18n="projects.p1.b3">Error handling and status codes</li>
+          <li data-i18n="projects.p1.b4">Simple UI with fetch requests</li>
+          <li data-i18n="projects.p1.b5">README with setup instructions</li>
+        </ul>
+
+        <p class="meta" data-i18n="projects.p1.tech">Tech: Python, FastAPI, SQLite, HTML/CSS/JS</p>
+
+        <p class="links">
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.github">GitHub</a>
+          <span class="dot">•</span>
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.demo">Demo</a>
+        </p>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="project-card">
+        <div class="project-head">
+          <h2 class="project-title">Auth + Profile</h2>
+          <span class="badge" data-i18n="projects.badge.fullstack">Full-Stack</span>
+        </div>
+
+        <p class="project-text" data-i18n="projects.p2.problem">
+          A small app with sign-up/login and a protected profile page.
+        </p>
+        <p class="project-text" data-i18n="projects.p2.solution">
+          Implemented auth basics and protected endpoints, storing users in SQLite.
+        </p>
+
+        <h3 class="project-subtitle" data-i18n="projects.whatBuilt">What I built</h3>
+        <ul class="list">
+          <li data-i18n="projects.p2.b1">Sign-up and login flow</li>
+          <li data-i18n="projects.p2.b2">Protected endpoints (auth required)</li>
+          <li data-i18n="projects.p2.b3">User table in SQLite</li>
+          <li data-i18n="projects.p2.b4">Basic input validation</li>
+          <li data-i18n="projects.p2.b5">README with setup instructions</li>
+        </ul>
+
+        <p class="meta" data-i18n="projects.p2.tech">Tech: Python, FastAPI, SQLite, HTML/CSS/JS</p>
+
+        <p class="links">
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.github">GitHub</a>
+          <span class="dot">•</span>
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.demo">Demo</a>
+        </p>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="project-card">
+        <div class="project-head">
+          <h2 class="project-title">Tracker (Coming soon)</h2>
+          <span class="badge" data-i18n="projects.badge.inprogress">In progress</span>
+        </div>
+
+        <p class="project-text" data-i18n="projects.p3.problem">
+          A simple tracker app (e.g., expenses, habits, books) with filters.
+        </p>
+        <p class="project-text" data-i18n="projects.p3.solution">
+          Planned as a full-stack CRUD app with FastAPI + SQLite and a minimal UI.
+        </p>
+
+        <h3 class="project-subtitle" data-i18n="projects.whatBuilt">Planned features</h3>
+        <ul class="list">
+          <li data-i18n="projects.p3.b1">CRUD items + filtering</li>
+          <li data-i18n="projects.p3.b2">SQLite schema + basic queries</li>
+          <li data-i18n="projects.p3.b3">Clean API structure (routers)</li>
+          <li data-i18n="projects.p3.b4">Simple UI with fetch</li>
+        </ul>
+
+        <p class="meta" data-i18n="projects.p3.tech">Tech: Python, FastAPI, SQLite, HTML/CSS/JS</p>
+
+        <p class="links">
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.github">GitHub</a>
+          <span class="dot">•</span>
+          <a href="#" target="_blank" rel="noreferrer" data-i18n="projects.links.demo">Demo</a>
+        </p>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>Oslo, Norway</span>
+      <span class="dot">•</span>
+      <a href="mailto:YOUR_EMAIL_HERE" data-i18n="footer.email">Email</a>
+      <span class="dot">•</span>
+      <a href="YOUR_GITHUB_URL_HERE" target="_blank" rel="noreferrer">GitHub</a>
+      <span class="dot">•</span>
+      <a href="YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

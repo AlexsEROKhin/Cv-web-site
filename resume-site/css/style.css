@@ -40,3 +40,42 @@ main { padding: 28px 0 40px; }
 .site-footer { border-top: 1px solid #e6e6e6; padding: 18px 0; }
 .footer-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .dot { opacity: 0.6; }
+.card h2 { margin: 0 0 8px; font-size: 18px; }
+.list { margin: 10px 0 0; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.project-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-title { margin: 0; font-size: 18px; }
+.project-text { margin: 10px 0; max-width: 75ch; }
+
+.project-subtitle {
+  margin: 12px 0 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.badge {
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
