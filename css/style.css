@@ -1,3 +1,6 @@
+/* ===============================
+   THEME VARIABLES (DARK DEFAULT)
+   =============================== */
 :root{
   --max: 1200px;
 
@@ -12,8 +15,41 @@
 
   --accent: #7c3aed;
   --accent2: #22d3ee;
+
+  /* buttons */
+  --btn-bg: rgba(255,255,255,0.05);
+  --btn-bg-hover: rgba(255,255,255,0.08);
+
+  /* active language button (IMPORTANT) */
+  --lang-active-bg: rgba(255,255,255,0.16);
+  --lang-active-text: #ffffff;
 }
 
+/* ===============================
+   LIGHT THEME OVERRIDES
+   =============================== */
+body.light{
+  --page: #f8fafc;
+  --surface: rgba(255,255,255,0.85);
+
+  --text: #0f172a;
+  --muted: #475569;
+
+  --border: rgba(15,23,42,0.15);
+  --shadow: 0 12px 40px rgba(0,0,0,0.12);
+
+  --accent: #2563eb;
+  --accent2: #06b6d4;
+
+  --btn-bg: rgba(15,23,42,0.04);
+  --btn-bg-hover: rgba(15,23,42,0.08);
+
+  /* active language button in light theme */
+  --lang-active-bg: rgba(37,99,235,0.14);
+  --lang-active-text: #0f172a;
+}
+
+/* ================= BASE ================= */
 *{ box-sizing: border-box; }
 html, body{ height: 100%; }
 
@@ -29,9 +65,19 @@ body{
     var(--page);
 }
 
+body.light{
+  background:
+    radial-gradient(900px 520px at 15% 0%, rgba(37,99,235,0.15), transparent 55%),
+    radial-gradient(900px 520px at 85% 0%, rgba(6,182,212,0.15), transparent 55%),
+    var(--page);
+}
+
 a{
   color: #c4b5fd;
   text-decoration: none;
+}
+body.light a{
+  color: var(--accent);
 }
 a:hover{ text-decoration: underline; }
 
@@ -42,7 +88,6 @@ a:hover{ text-decoration: underline; }
 }
 
 /* ================= HEADER ================= */
-
 .site-header{
   position: sticky;
   top: 0;
@@ -91,28 +136,37 @@ a:hover{ text-decoration: underline; }
   text-decoration: none;
 }
 
+/* right side buttons */
 .lang{
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
-.lang-btn{
+.lang-btn,
+.theme-btn{
   padding: 8px 10px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.05);
+  background: var(--btn-bg);
   color: var(--text);
   font-weight: 700;
   cursor: pointer;
 }
 
+.lang-btn:hover,
+.theme-btn:hover{
+  background: var(--btn-bg-hover);
+}
+
+/* ✅ FIX: active language button uses dedicated variables */
 .lang-btn.active{
-  background: var(--text);
-  color: #0b1220;
+  background: var(--lang-active-bg);
+  color: var(--lang-active-text);
+  border-color: transparent;
 }
 
 /* ================= MAIN ================= */
-
 main{
   padding: 24px 0 60px;
 }
@@ -133,8 +187,7 @@ main{
   color: var(--muted);
 }
 
-/* ================= BUTTONS ================= */
-
+/* ================= BUTTONS (hero) ================= */
 .buttons{
   display: flex;
   gap: 10px;
@@ -146,13 +199,13 @@ main{
   padding: 10px 14px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.05);
+  background: var(--btn-bg);
   font-weight: 700;
   color: var(--text);
 }
 
 .btn:hover{
-  background: rgba(255,255,255,0.08);
+  background: var(--btn-bg-hover);
   text-decoration: none;
 }
 
@@ -163,7 +216,6 @@ main{
 }
 
 /* ================= SECTIONS ================= */
-
 .block{
   margin-top: 28px;
 }
@@ -174,7 +226,6 @@ main{
 }
 
 /* ================= CARDS ================= */
-
 .cards,
 .project-grid{
   display: grid;
@@ -190,6 +241,11 @@ main{
   padding: 16px;
   background: rgba(255,255,255,0.04);
   box-shadow: var(--shadow);
+}
+
+body.light .card,
+body.light .project-card{
+  background: rgba(255,255,255,0.70);
 }
 
 .card h2,
@@ -231,10 +287,13 @@ main{
   background: rgba(255,255,255,0.06);
 }
 
-/* ================= FOOTER ================= */
+body.light .badge{
+  background: rgba(15,23,42,0.04);
+}
 
+/* ================= FOOTER ================= */
 .site-footer{
-  margin-top: 80px;          /* ← линия ниже */
+  margin-top: 80px; /* линия ниже контента */
   padding: 14px 0 24px;
   border-top: 1px solid var(--border);
   background: transparent;
@@ -252,42 +311,6 @@ main{
 .dot{ opacity: 0.6; }
 
 /* ================= MOBILE ================= */
-
 @media (max-width: 600px){
   .hero h1{ font-size: 32px; }
-}
-/* ================= THEME TOGGLE ================= */
-
-.theme-btn{
-  padding: 8px 10px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.05);
-  color: var(--text);
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.theme-btn:hover{
-  background: rgba(255,255,255,0.08);
-}
-
-/* ---------- LIGHT THEME ---------- */
-body.light{
-  --page: #f8fafc;
-  --surface: rgba(255,255,255,0.85);
-
-  --text: #0f172a;
-  --muted: #475569;
-
-  --border: rgba(15,23,42,0.15);
-  --shadow: 0 12px 40px rgba(0,0,0,0.12);
-
-  --accent: #2563eb;
-  --accent2: #06b6d4;
-
-  background:
-    radial-gradient(900px 520px at 15% 0%, rgba(37,99,235,0.15), transparent 55%),
-    radial-gradient(900px 520px at 85% 0%, rgba(6,182,212,0.15), transparent 55%),
-    var(--page);
 }
