@@ -52,44 +52,46 @@ window.I18N = {
     },
 
     projects: {
-      title: "Projects",
-      intro: "Selected projects that demonstrate my full-stack skills. Each project includes a clear setup guide and source code.",
-      whatBuilt: "What I built",
-      plannedTitle: "Planned features",
+  title: "Projects",
+  intro: "Selected projects from my GitHub that demonstrate full-stack development, API design and frontend-backend integration.",
+  whatBuilt: "What I built",
+  plannedTitle: "What it includes",
 
-      badge: { fullstack: "Full-Stack", inprogress: "In progress" },
-      links: { github: "GitHub", demo: "Demo" },
+  badge: { fullstack: "Full-Stack", inprogress: "Project" },
+  links: { github: "GitHub", demo: "Demo" },
 
-      p1: {
-        problem: "A simple app to create and manage tasks.",
-        solution: "Built a FastAPI REST API and connected it to an SQLite database, with a basic frontend using fetch.",
-        b1: "CRUD endpoints with validation",
-        b2: "SQLite schema for tasks",
-        b3: "Error handling and status codes",
-        b4: "Simple UI with fetch requests",
-        b5: "README with setup instructions",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      },
-      p2: {
-        problem: "A small app with sign-up/login and a protected profile page.",
-        solution: "Implemented auth basics and protected endpoints, storing users in SQLite.",
-        b1: "Sign-up and login flow",
-        b2: "Protected endpoints (auth required)",
-        b3: "User table in SQLite",
-        b4: "Basic input validation",
-        b5: "README with setup instructions",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      },
-      p3: {
-        problem: "A simple tracker app (e.g., expenses, habits, books) with filters.",
-        solution: "Planned as a full-stack CRUD app with FastAPI + SQLite and a minimal UI.",
-        b1: "CRUD items + filtering",
-        b2: "SQLite schema + basic queries",
-        b3: "Clean API structure (routers)",
-        b4: "Simple UI with fetch",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      }
-    },
+  p1: {
+    problem: "A full-stack notes application with user authentication and private notes.",
+    solution: "Built registration, login, JWT authentication and protected notes management with a FastAPI backend.",
+    b1: "User registration and login",
+    b2: "JWT-based authentication",
+    b3: "Protected API endpoints",
+    b4: "Private notes CRUD functionality",
+    b5: "Dockerized setup and API tests",
+    tech: "Tech: Python, FastAPI, SQLite, SQLAlchemy, JWT, HTML/CSS/JS, Docker"
+  },
+
+  p2: {
+    problem: "A full-stack task management app with API-driven task operations.",
+    solution: "Built a FastAPI backend and connected it to a vanilla JavaScript frontend using REST API calls.",
+    b1: "CRUD operations for tasks",
+    b2: "Pagination, filtering and search",
+    b3: "Sorting by title and status",
+    b4: "Frontend-backend integration via Fetch API",
+    b5: "Docker support and basic pytest tests",
+    tech: "Tech: Python, FastAPI, Vanilla JavaScript, HTML/CSS, Docker, Pytest"
+  },
+
+  p3: {
+    problem: "A translation assistant project focused on helping users work with translated text.",
+    solution: "Built a practical assistant-style project to organize translation-related functionality and improve workflow.",
+    b1: "Translation-focused project structure",
+    b2: "User-oriented functionality",
+    b3: "Simple and practical interface",
+    b4: "GitHub repository with source code",
+    tech: "Tech: Python / JavaScript / HTML/CSS"
+  }
+},
     education: {
         title: "Education & Learning",
         intro: "My education background and current learning focus.",
@@ -187,44 +189,46 @@ window.I18N = {
     },
 
     projects: {
-      title: "Prosjekter",
-      intro: "Utvalgte prosjekter som viser fullstack-ferdighetene mine. Hvert prosjekt har tydelig oppsett i README og kildekode.",
-      whatBuilt: "Dette har jeg laget",
-      plannedTitle: "Planlagte funksjoner",
+  title: "Prosjekter",
+  intro: "Utvalgte GitHub-prosjekter som viser fullstack-utvikling, API-design og integrasjon mellom frontend og backend.",
+  whatBuilt: "Dette har jeg laget",
+  plannedTitle: "Dette inkluderer",
 
-      badge: { fullstack: "Fullstack", inprogress: "Pågår" },
-      links: { github: "GitHub", demo: "Demo" },
+  badge: { fullstack: "Fullstack", inprogress: "Prosjekt" },
+  links: { github: "GitHub", demo: "Demo" },
 
-      p1: {
-        problem: "En enkel app for å lage og administrere oppgaver.",
-        solution: "Jeg bygde et FastAPI REST API og koblet det til en SQLite-database, med en enkel frontend via fetch.",
-        b1: "CRUD-endepunkter med validering",
-        b2: "SQLite-datamodell for oppgaver",
-        b3: "Feilhåndtering og statuskoder",
-        b4: "Enkel UI med fetch-kall",
-        b5: "README med oppsett og kjøring",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      },
-      p2: {
-        problem: "En liten app med registrering/innlogging og en beskyttet profilsiden.",
-        solution: "Jeg implementerte grunnleggende autentisering og beskyttede endepunkter, og lagret brukere i SQLite.",
-        b1: "Registrering og innlogging",
-        b2: "Beskyttede endepunkter (krever innlogging)",
-        b3: "Brukertabell i SQLite",
-        b4: "Grunnleggende input-validering",
-        b5: "README med oppsett og kjøring",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      },
-      p3: {
-        problem: "En enkel tracker-app (f.eks. utgifter, vaner, bøker) med filtre.",
-        solution: "Planlagt som en fullstack CRUD-app med FastAPI + SQLite og et minimalistisk UI.",
-        b1: "CRUD + filtrering",
-        b2: "SQLite-skjema + enkle spørringer",
-        b3: "Ryddig API-struktur (routers)",
-        b4: "Enkel UI med fetch",
-        tech: "Tech: Python, FastAPI, SQLite, HTML/CSS/JS"
-      }
-    },
+  p1: {
+    problem: "En fullstack notes-app med brukerautentisering og private notater.",
+    solution: "Jeg bygde registrering, innlogging, JWT-autentisering og beskyttet håndtering av notater med FastAPI-backend.",
+    b1: "Registrering og innlogging",
+    b2: "JWT-basert autentisering",
+    b3: "Beskyttede API-endepunkter",
+    b4: "Private notater med CRUD-funksjonalitet",
+    b5: "Docker-oppsett og API-tester",
+    tech: "Tech: Python, FastAPI, SQLite, SQLAlchemy, JWT, HTML/CSS/JS, Docker"
+  },
+
+  p2: {
+    problem: "En fullstack task management-app med API-baserte oppgavefunksjoner.",
+    solution: "Jeg bygde en FastAPI-backend og koblet den til en vanilla JavaScript-frontend med REST API-kall.",
+    b1: "CRUD-operasjoner for oppgaver",
+    b2: "Paginering, filtrering og søk",
+    b3: "Sortering etter tittel og status",
+    b4: "Frontend-backend-integrasjon med Fetch API",
+    b5: "Docker-støtte og grunnleggende pytest-tester",
+    tech: "Tech: Python, FastAPI, Vanilla JavaScript, HTML/CSS, Docker, Pytest"
+  },
+
+  p3: {
+    problem: "Et translation assistant-prosjekt laget for å hjelpe brukere med oversatt tekst.",
+    solution: "Jeg bygde et praktisk assistent-prosjekt for å organisere oversettelsesrelatert funksjonalitet og forbedre arbeidsflyten.",
+    b1: "Prosjektstruktur for oversettelsesfunksjoner",
+    b2: "Brukerorientert funksjonalitet",
+    b3: "Enkel og praktisk interface",
+    b4: "GitHub-repository med kildekode",
+    tech: "Tech: Python / JavaScript / HTML/CSS"
+  }
+},
     education: {
         title: "Utdanning og læring",
         intro: "Bakgrunn fra utdanning og hva jeg lærer nå.",
